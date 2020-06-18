@@ -63,7 +63,7 @@ nav#headNav .search input[type='text'] {
 nav#headNav .search i {
     position: absolute;
     top: 5px;
-    left: 200px;
+    left: 180px;
 }
 
 nav#headNav .logo {
@@ -73,8 +73,8 @@ nav#headNav .logo {
 
 nav#headNav .logo h2 {
     margin: 10px;
-    letter-spacing: -2px;
-    text-shadow: 2px 4px 3px rgba(133, 11, 11, 0.5);
+    letter-spacing: -1px;
+
 }
 
 nav#headNav .cart {
@@ -89,7 +89,7 @@ nav#headNav .cart {
 
 nav#headNav .cart li {
     list-style-type: none;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 nav#sectionNav {
@@ -149,7 +149,7 @@ nav#sectionNav li {
 }
 
 .sortLayout #display {
-    grid-column: 2/3;
+    grid-column: 2/5;
     margin-left: 27px;
 }
 
@@ -246,12 +246,12 @@ main #salesGrid .more_info {
 
 main .more_info small {
     grid-row: 2/3;
-    grid-column: 1/9;
+    grid-column: 1/7;
 }
 
 main .more_info .stars {
     grid-row: 2/3;
-    grid-column: 10/13;
+    grid-column: 7/13;
 }
 
 main .more_info .stars i {
@@ -274,6 +274,7 @@ main .more_info h3 {
 
 main .more_info button {
     grid-row: 4/5;
+    padding: 5px;
     grid-column: 7/13;
     background-color: transparent;
     border: none;
@@ -496,22 +497,61 @@ footer li {
 
 footer #address {
     grid-row: 1/2;
-    grid-column: 2/5;
+    grid-column: 2/6;
+}
+
+footer #address h2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 footer #about {
     grid-row: 1/2;
-    grid-column: 5/7;
+    grid-column: 6/8;
 }
 
 footer #follow {
     grid-row: 1/2;
-    grid-column: 7/9;
+    grid-column: 8/10;
 }
 
 footer #more {
     grid-row: 1/2;
-    grid-column: 9/12;
+    grid-column: 10/13;
+    position: relative;
+}
+
+footer #more input {
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 10px;
+    color: white;
+    opacity: 0.5;
+    border: none;
+    width: 80%;
+    background-color: rgba(27, 26, 26, 0.822);
+}
+
+footer #more button {
+    padding: 5px;
+    border: none;
+    position: absolute;
+    right: 75px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #fff;
+}
+
+footer #more ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+footer #more li {
+    list-style-type: none;
+    margin-left: 15px;
 }
 
 footer #arrowup {
@@ -531,6 +571,7 @@ footer #base {
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    padding: 5px;
 }
 
 
@@ -541,7 +582,7 @@ footer #base p {
 }
 
 footer #base #arrowup {
-    grid-column: 12/13;
+    grid-column: 13;
     padding: 0;
     margin: 0;
 }
@@ -549,4 +590,5 @@ footer #base #arrowup {
 footer #base #arrowup a {
     border-radius: 50%;
     padding: 5px 10px;
+    background-color: rgba(224, 228, 220, 0.5);
 }
