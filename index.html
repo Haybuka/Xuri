@@ -5,17 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xuri</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <div class="container">
         <div class="coupon">
-            <small>Mid Season sale up to 20% OFF. Use Code 'SALEOFF20'</small>
+            <small id="offSeason">Mid Season sale up to 20% OFF. Use Code 'SALEOFF20'</small>
             <select name="language" id="lang">
                 <option value="Eng">Eng</option>
             </select>
             <select name="currency" id="curr">
                 <option value="usd">USD</option>
+                <option value="ngn">NGN</option>
             </select>
         </div>
         <nav id="headNav">
@@ -26,7 +28,7 @@
             <div class="logo">
                 <h2>Xuri</h2>
             </div>
-            <ul>
+            <ul class="cart">
                 <li>p</li>
                 <li>l</li>
                 <li>c</li>
@@ -44,11 +46,82 @@
             </ul>
         </nav>
         <div class="currentPage">
-            <ul>
-                <li>Home /</li>
+            <ul id="shop">
+                <li>Home</li>
+                <li>/</li>
                 <li class="active">Shop</li>
             </ul>
         </div>
+        <div class="sortLayout">
+            <div id="display">
+                <ul>
+                    <li>Grid</li>
+                    <li>List</li>
+                </ul>
+            </div>
+            <div id="filter">
+                <b>Sort By :</b>
+                <select name="sort" id="sorting">
+                    <option value="Default">Default Sorting</option>
+                    <option value="shoes">Shoes</option>
+                    <option value="clothes">Clothes</option>
+                    <option value="price">Prices</option>
+                </select>
+            </div>
+            <div id="result">
+                <p>Showing <span>1</span> - <span>12</span> of <span>19</span> results</p>
+            </div>
+        </div>
+        <main>
+            <section id="first">
+                <div class="image">
+                    <img src="images/hood.png" alt="">
+                </div>
+                <div class="more_info">
+                    <small>Clothing</small>
+                    <div class="stars"></div>
+                    <p>A Fine Bag</p>
+                    <h3>$100.00</h3>
+                    <button>Add to Cart</button>
+                </div>
+            </section>
+            <section id="second">
+                <div class="image">
+                    <img src="images/hood.png" alt="">
+                </div>
+                <div class="more_info">
+                    <small>Clothing</small>
+                    <div class="stars"></div>
+                    <p>A Fine Bag</p>
+                    <h3>$100.00</h3>
+                    <button>Add to Cart</button>
+                </div>
+            </section>
+            <section id="third">
+                <div class="image">
+                    <img src="images/hood.png" alt="">
+                </div>
+                <div class="more_info">
+                    <small>Clothing</small>
+                    <div class="stars"></div>
+                    <p>A Fine Bag</p>
+                    <h3>$100.00</h3>
+                    <button>Add to Cart</button>
+                </div>
+            </section>
+            <section id="fourth">
+                <div class="image">
+                    <img src="images/hood.png" alt="">
+                </div>
+                <div class="more_info">
+                    <small>Clothing</small>
+                    <div class="stars"></div>
+                    <p>A Fine Bag</p>
+                    <h3>$100.00</h3>
+                    <button>Add to Cart</button>
+                </div>
+            </section>
+        </main>
     </div>
 </body>
 
