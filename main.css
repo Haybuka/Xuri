@@ -27,7 +27,10 @@ body {
 .coupon select {
     border: none;
     width: 80px;
+    background-color: transparent;
 }
+
+
 
 .coupon #offSeason {
     grid-column: 1/5;
@@ -59,12 +62,15 @@ nav#headNav .search input[type='text'] {
     width: 60%;
     padding: 5px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.692);
+    background-color: transparent;
+    color: white;
 }
 
 nav#headNav .search i {
     position: absolute;
     top: 5px;
     left: 180px;
+    cursor: pointer;
 }
 
 nav#headNav .logo {
@@ -91,6 +97,7 @@ nav#headNav .cart {
 nav#headNav .cart li {
     list-style-type: none;
     margin-right: 15px;
+    cursor: pointer;
 }
 
 nav#sectionNav {
@@ -168,6 +175,7 @@ nav#sectionNav li a {
 .sortLayout #display li {
     list-style-type: none;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .sortLayout #filter {
@@ -239,6 +247,7 @@ main #salesGrid section .image {
 
 main #salesGrid section img {
     width: 100%;
+    padding: 1%;
 }
 
 main #salesGrid .more_info {
@@ -256,8 +265,8 @@ main .more_info small {
 }
 
 main .more_info .stars {
-    grid-row: 2/3;
-    grid-column: 7/13;
+    grid-row: 4/5;
+    grid-column: 1/13;
 }
 
 main .more_info .stars i {
@@ -272,20 +281,21 @@ main .more_info p {
 }
 
 main .more_info h3 {
-    grid-row: 4/5;
+    grid-row: 5/6;
     grid-column: 1/5;
     margin: 5px;
     margin-left: 0;
 }
 
 main .more_info button {
-    grid-row: 4/5;
+    grid-row: 5/6;
     padding: 5px;
     grid-column: 7/13;
     background-color: transparent;
     border: none;
     color: transparent;
     transition: all 0.5s;
+    margin-bottom: 10px;
 }
 
 main .more_info button:hover {
@@ -338,10 +348,6 @@ main #nine {
     grid-row: 3/4;
 }
 
-main #twelve {
-    grid-column: 4/7;
-    grid-row: 3/4;
-}
 
 main #ten {
     grid-column: 7/10;
@@ -350,6 +356,11 @@ main #ten {
 
 main #eleven {
     grid-column: 10/13;
+    grid-row: 3/4;
+}
+
+main #twelve {
+    grid-column: 4/7;
     grid-row: 3/4;
 }
 
@@ -408,7 +419,7 @@ main #nextPage a.activeNext {
 
 aside {
     grid-row: 5/7;
-    grid-column: 10/12;
+    grid-column: 10/13;
 }
 
 #categories {
@@ -439,6 +450,14 @@ aside {
     padding: 3px;
     list-style-type: none;
     border-bottom: 1px solid rgba(58, 57, 57, 0.226);
+    transition: all 0.2s;
+}
+
+#categories li:hover {
+    position: relative;
+    top: -5px;
+    font-weight: bold;
+    color: red;
 }
 
 #priceFilter {
@@ -582,7 +601,7 @@ footer #base {
 
 
 footer #base p {
-    grid-column: 1/6;
+    grid-column: 1/10;
     padding: 0;
     margin: 0;
 }
@@ -702,7 +721,7 @@ footer #base #arrowup a {
 
 
 #footerNav #base p {
-    grid-column: 1/6;
+    grid-column: 1/10;
     padding: 0;
     margin: 0;
 }
@@ -738,7 +757,7 @@ footer #base #arrowup a {
 }
 
 #contact #left {
-    grid-column: 2/7;
+    grid-column: 3/7;
     margin-top: 70px;
 }
 
@@ -790,4 +809,331 @@ footer #base #arrowup a {
     margin: 15px auto;
     font-weight: 500;
     font-weight: bold;
+}
+
+/* Responsive breakPoint */
+@media screen and (max-width:1200px) {
+    .coupon #offSeason {
+        grid-column: 1/8;
+    }
+
+    nav#sectionNav ul {
+        grid-column: 4/11;
+    }
+
+    nav#sectionNav li {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+
+    .sortLayout #filter {
+        grid-column: 5/9;
+    }
+
+
+    .sortLayout #result {
+        grid-column: 9/13;
+    }
+
+    main #first {
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+
+    main #second {
+        grid-column: 5/9;
+        grid-row: 1/2;
+    }
+
+    main #third {
+        grid-column: 9/13;
+        grid-row: 1/2;
+    }
+
+    main section#fourth {
+        grid-column: 10/13;
+        grid-row: 1/2;
+        display: none;
+    }
+
+    main #fifth {
+        grid-column: 5/9;
+        grid-row: 2/3;
+    }
+
+    main #sixth {
+
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+
+    main #seventh {
+        grid-column: 9/13;
+        grid-row: 2/3;
+    }
+
+    main section#eight {
+        display: none;
+        grid-column: 10/13;
+        grid-row: 2/3;
+    }
+
+    main #nine {
+        grid-column: 5/9;
+        grid-row: 3/4;
+    }
+
+
+    main #ten {
+        grid-column: 9/13;
+        grid-row: 3/4;
+    }
+
+    main #eleven {
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+
+    main section#twelve {
+
+        grid-column: 10/13;
+        grid-row: 3/4;
+        display: none;
+    }
+}
+
+@media screen and (max-width:930px) {
+
+    main #thirteen {
+        grid-column: 1/5;
+        grid-row: 4/5;
+    }
+
+    main section#fourteen {
+        grid-column: 4/7;
+        grid-row: 4/5;
+        display: none;
+    }
+
+    main #fifteen {
+        grid-column: 9/13;
+        grid-row: 4/5;
+    }
+
+    main #sixteen {
+        grid-column: 5/9;
+        grid-row: 4/5;
+    }
+
+    footer {
+        padding: 30px;
+    }
+
+    footer #address {
+        grid-column: 1/5;
+    }
+
+    footer #about {
+        grid-column: 5/7;
+    }
+
+    footer #follow {
+        grid-column: 7/9;
+    }
+
+    footer #more {
+        grid-column: 9/13;
+    }
+
+    footer #more button {
+        right: 60px;
+    }
+
+    footer #address li:nth-child(1) {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:870px) {
+
+    nav#sectionNav li {
+        margin-left: 10px;
+    }
+
+    main #salesGrid section .image {
+        background-color: transparent;
+    }
+
+    main #first {
+        grid-column: 1/7;
+        grid-row: 1/2;
+    }
+
+    main section#second {
+        grid-column: 5/9;
+        grid-row: 1/2;
+        display: none;
+    }
+
+    main #third {
+        grid-column: 7/13;
+        grid-row: 1/2;
+    }
+}
+
+@media screen and (max-width:810px) {
+    .coupon #offSeason {
+        grid-column: 1/10;
+    }
+
+    nav#sectionNav li {
+        margin-left: 20px;
+    }
+
+    nav#sectionNav ul {
+        grid-column: 3/13;
+    }
+
+    nav#headNav .search i {
+        left: 90px;
+    }
+
+    .sortLayout #display {
+        display: none;
+    }
+
+    .sortLayout #filter {
+        grid-column: 2/7;
+    }
+
+    .sortLayout #result {
+        grid-column: 8/13;
+    }
+
+    main section#fifth {
+        grid-column: 5/9;
+        grid-row: 2/3;
+        display: none;
+    }
+
+    main #sixth {
+        grid-column: 1/7;
+        grid-row: 2/3;
+    }
+
+    main #seventh {
+        grid-column: 7/13;
+        grid-row: 2/3;
+    }
+
+    main section#eight {
+        display: none;
+        grid-column: 10/13;
+        grid-row: 2/3;
+    }
+
+    main section#nine {
+        grid-column: 5/9;
+        grid-row: 3/4;
+        display: none;
+    }
+
+
+    main #ten {
+        grid-column: 7/13;
+        grid-row: 3/4;
+    }
+
+    main #eleven {
+        grid-column: 1/7;
+        grid-row: 3/4;
+    }
+
+    main section#twelve {
+
+        grid-column: 10/13;
+        grid-row: 3/4;
+        display: none;
+    }
+
+    footer #address {
+        grid-row: 1/2;
+        grid-column: 1/7;
+    }
+
+    footer #more {
+        grid-row: 1/2;
+        grid-column: 7/13;
+    }
+
+    footer #follow {
+        grid-column: 1/7;
+        grid-row: 2/3;
+    }
+
+    footer #about {
+        grid-column: 7/13;
+        grid-row: 2/3;
+    }
+
+    footer #base {
+        grid-row: 3/4;
+    }
+
+    footer #more button {
+        right: 80px;
+    }
+
+    #categories {
+        margin: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    main #salesGrid .more_info {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .sortLayout #filter {
+        grid-column: 1/6;
+    }
+
+    .sortLayout #result {
+        grid-column: 7/13;
+    }
+
+    #categories,
+    #priceFilter,
+    #topRated {
+        margin: 5px;
+    }
+
+    .coupon #offSeason {
+        grid-column: 1/11;
+    }
+
+    main #thirteen {
+        grid-column: 1/7;
+        grid-row: 4/5;
+    }
+
+    main #sixteen {
+        grid-column: 7/13;
+        grid-row: 4/5;
+    }
+
+    main section#fifteen {
+        grid-column: 9/13;
+        grid-row: 4/5;
+        display: none;
+    }
+
+    nav#headNav .search i {
+        left: 70px;
+    }
 }
