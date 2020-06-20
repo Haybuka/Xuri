@@ -1103,6 +1103,12 @@ footer #base #arrowup a {
 }
 
 @media screen and (max-width:680px) {
+    main #nextPage {
+        margin-top: 50px;
+        margin-bottom: 30px;
+
+    }
+
     .coupon {
         margin-left: 10px;
         margin-right: 10px;
@@ -1162,9 +1168,56 @@ footer #base #arrowup a {
     nav#sectionNav ul {
         grid-column: 2/13;
     }
+
+    #contact #right {
+        grid-row: 1/2;
+        grid-column: 1/12;
+    }
+
+    #contact #left {
+        grid-column: 1/12;
+        grid-row: 2/3;
+        margin-top: 30px;
+    }
+
+    #footerNav #address {
+        grid-row: 1/2;
+        grid-column: 1/13;
+    }
+
+    #footerNav #more {
+        grid-column: 1/13;
+        grid-row: 4/5;
+
+    }
+
+    #footerNav #follow {
+        grid-column: 1/13;
+        grid-row: 3/4;
+    }
+
+    #footerNav #about {
+        grid-row: 2/3;
+        grid-column: 1/13;
+    }
+
+    #footerNav #base p {
+        grid-column: 1/13;
+
+    }
+
+    #footerNav #base {
+        grid-row: 5/6;
+        grid-column: 1/12;
+    }
 }
 
 @media screen and (max-width:560px) {
+    main #nextPage {
+        margin-top: 50px;
+        margin-bottom: 30px;
+
+    }
 
     .coupon {
         grid-column: 1/13;
