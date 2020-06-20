@@ -1287,17 +1287,13 @@ footer #base #arrowup a {
     }
 }
 
-@media screen and (max-width : 400px) {
+/* @media screen and (max-width : 400px) {
     body {
         background-color: pink;
     }
-}
+} */
 
-@media screen and (max-width : 380px) {
-    body {
-        background-color: red;
-    }
-
+@media screen and (max-width : 400px) {
     nav#headNav .logo {
         grid-column: 6/8;
         text-align: center;
@@ -1386,6 +1382,10 @@ footer #base #arrowup a {
         color: black;
     }
 
+    main #nextPage {
+        margin-top: 15px;
+    }
+
     #topRated {
         height: 200px;
     }
@@ -1405,8 +1405,9 @@ footer #base #arrowup a {
     }
 
     footer #more {
-        grid-row: 2/3;
         grid-column: 1/13;
+        grid-row: 4/5;
+
     }
 
     footer #follow {
@@ -1415,12 +1416,12 @@ footer #base #arrowup a {
     }
 
     footer #about {
+        grid-row: 2/3;
         grid-column: 1/13;
-        grid-row: 4/5;
     }
 
     footer #base p {
-        grid-column: 1/12;
+        grid-column: 1/13;
 
     }
 
