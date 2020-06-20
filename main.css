@@ -126,6 +126,10 @@ nav#sectionNav li a {
     text-decoration: none;
 }
 
+nav#sectionNav .harmburger {
+    display: none;
+}
+
 .active {
     color: rgb(233, 10, 10);
 }
@@ -1289,8 +1293,79 @@ footer #base #arrowup a {
     }
 }
 
-@media screen and (max-width : 360px) {
+@media screen and (max-width : 380px) {
     body {
         background-color: red;
+    }
+
+    nav#headNav .logo {
+        grid-column: 6/8;
+        text-align: center;
+    }
+
+    nav#sectionNav .harmburger {
+        display: block;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    nav#sectionNav .harmburger span {
+        width: 30px;
+        display: block;
+        height: 5px;
+        margin-left: 10px;
+        margin-top: 3px;
+        background-color: black;
+    }
+
+    nav#headNav .search {
+        grid-column: 1/13;
+    }
+
+    nav#sectionNav ul {
+        grid-column: 1/13;
+        text-align: left;
+        color: transparent;
+        height: 0;
+        transition: all 1s;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    nav#headNav .cart {
+        grid-row: 1/2;
+    }
+
+    nav#headNav .logo {
+        grid-column: 1/5;
+        text-align: left;
+    }
+
+    nav#headNav .logo h2 {
+        margin: 0;
+    }
+
+    .currentPage #shop {
+        grid-column: 1/5;
+        margin-left: 5px;
+    }
+
+    nav#sectionNav ul.active {
+        color: black;
+        display: block;
+        height: auto;
+    }
+
+    nav#sectionNav ul:after {
+        display: block;
+        content: '';
+        clear: both;
+    }
+
+    nav#sectionNav li {
+        margin-left: 5px;
+        margin-top: 10px;
+        border-bottom: 1px solid grey;
     }
 }
