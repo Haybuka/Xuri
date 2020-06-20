@@ -1099,8 +1099,26 @@ footer #base #arrowup a {
 }
 
 @media screen and (max-width:680px) {
+    .coupon {
+        margin-left: 10px;
+        margin-right: 10px;
+        grid-column: 1/13;
+    }
+
+    .coupon #offSeason {
+        grid-column: 1/12;
+    }
+
+    .coupon #lang {
+        grid-column: 12/13;
+    }
+
+    .coupon #curr {
+        grid-column: 13;
+    }
+
     .sortLayout #filter {
-        grid-column: 1/6;
+        grid-column: 1/7;
     }
 
     .sortLayout #result {
@@ -1134,6 +1152,132 @@ footer #base #arrowup a {
     }
 
     nav#headNav .search i {
-        left: 70px;
+        left: 60px;
+    }
+
+    nav#sectionNav ul {
+        grid-column: 2/13;
+    }
+}
+
+@media screen and (max-width:560px) {
+
+    .coupon {
+        grid-column: 1/13;
+        text-align: center;
+    }
+
+    .coupon #offSeason {
+        grid-column: 1/13;
+    }
+
+    .coupon #lang {
+        grid-column: 12/13;
+        display: none;
+    }
+
+    .coupon #curr {
+        grid-column: 13;
+        display: none;
+    }
+
+    nav#headNav {
+        grid-column: 1/13;
+    }
+
+    nav#headNav .search {
+        grid-column: 1/10;
+        grid-row: 2/3;
+    }
+
+    nav#headNav .search i {
+        left: 180px;
+    }
+
+    nav#headNav .cart {
+
+        grid-row: 2/3;
+    }
+
+    nav#sectionNav ul {
+        grid-column: 1/13;
+        text-align: center;
+    }
+
+    .sortLayout #filter {
+        grid-column: 1/10;
+        grid-row: 1/2;
+    }
+
+    .sortLayout #result {
+        grid-column: 1/10;
+        grid-row: 2/3;
+        margin-top: 10px;
+    }
+
+    main #first {
+        grid-column: 1/11;
+        grid-row: 1/2;
+    }
+
+    main section#third {
+        grid-column: 7/13;
+        grid-row: 1/2;
+        display: none;
+    }
+
+    main section#sixth {
+        grid-column: 1/7;
+        grid-row: 2/3;
+        display: none;
+    }
+
+    main #seventh {
+        grid-column: 1/11;
+        grid-row: 2/3;
+    }
+
+    main section#eight {
+        display: none;
+        grid-column: 10/13;
+        grid-row: 2/3;
+    }
+
+    main section#nine {
+        grid-column: 5/9;
+        grid-row: 3/4;
+        display: none;
+    }
+
+
+    main #ten {
+        grid-column: 1/11;
+        grid-row: 3/4;
+    }
+
+    main section#eleven {
+        grid-column: 1/7;
+        grid-row: 3/4;
+        display: none;
+    }
+
+    main section#thirteen {
+        grid-column: 1/7;
+        grid-row: 4/5;
+        display: none;
+    }
+
+    main #sixteen {
+        grid-column: 1/11;
+        grid-row: 4/5;
+    }
+
+    aside {
+        grid-row: 5/7;
+        grid-column: 9/13;
+    }
+
+    footer #base {
+        grid-column: 1/12;
     }
 }
