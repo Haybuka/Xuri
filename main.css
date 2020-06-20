@@ -1261,15 +1261,16 @@ footer #base #arrowup a {
         display: none;
     }
 
-    main section#thirteen {
-        grid-column: 1/7;
-        grid-row: 4/5;
-        display: none;
-    }
-
-    main #sixteen {
+    main #thirteen {
         grid-column: 1/11;
         grid-row: 4/5;
+
+    }
+
+    main section#sixteen {
+        grid-column: 1/11;
+        grid-row: 4/5;
+        display: none;
     }
 
     aside {
@@ -1279,5 +1280,17 @@ footer #base #arrowup a {
 
     footer #base {
         grid-column: 1/12;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    body {
+        background-color: pink;
+    }
+}
+
+@media screen and (max-width : 360px) {
+    body {
+        background-color: red;
     }
 }
